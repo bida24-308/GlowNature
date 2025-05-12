@@ -1,5 +1,4 @@
-
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -9,6 +8,25 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    /* Temporary inline CSS to fix image spacing and layout */
+    .feature-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .feature-box {
+      flex: 1;
+      min-width: 250px;
+      text-align: center;
+    }
+    .feature-box img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -42,8 +60,7 @@
       <div class="feature-box">
         <img src="banner 1.png" alt="Natural" />
         <h3>100% Natural</h3>
-        <p>Only the finest ingredients, straight from nature to your skin. Our 100% made skincare products use only natural ingridients like turmeric, shea, butter, and aloe vera-completely free from chemicals, additives, and artificial fragrances for safe, gentle, and effective skincare.<p></p>
-      
+        <p>Only the finest ingredients, straight from nature to your skin. Our skincare products use natural ingredients like turmeric, shea butter, and aloe vera—completely free from chemicals, additives, and artificial fragrances for safe, gentle, and effective skincare.</p>
       </div>
       <div class="feature-box">
         <img src="handmade.png" alt="Handmade" />
@@ -63,3 +80,5 @@
   </footer>
 </body>
 </html>
+
+
