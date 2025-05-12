@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | GlowNature</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #ffffff;
+      padding: 15px 10%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #2e7d32;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    .nav-links a:hover,
+    .nav-links .active {
+      color: #4CAF50;
+      font-weight: bold;
+    }
+
+    .blog-section {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    .blog-post {
+      margin-bottom: 3rem;
+    }
+
+    .blog-post h2 {
+      font-size: 1.8rem;
+      color: #333;
+    }
+
+    .read-more-content {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .read-more-content.show {
+      display: block;
+      opacity: 1;
+    }
+
+    .read-more-button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 0.9rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .read-more-button:hover {
+      background-color: #388e3c;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background-color: #f3f3f3;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">GlowNature</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="blog-section">
+    <h1>Our Latest Insights</h1>
+
+    <!-- BLOG POST 1 -->
+    <div class="blog-post">
+      <h2>How to Choose the Right Skincare Products</h2>
+      <p>Choosing the right skincare products can make a huge difference in achieving healthy, glowing skin.</p>
+      <div class="read-more-content">
+        <h4>1. Know Your Skin Type</h4>
+        <p>Understanding your skin type is the first and most important step.</p>
+        <ul>
+          <li>Oily skin: Look for lightweight, oil-free, or mattifying products.</li>
+          <li>Dry skin: Choose hydrating and moisturizing products.</li>
+          <li>Combination skin: Use products that balance oil production.</li>
+          <li>Sensitive skin: Go for fragrance-free, soothing ingredients.</li>
+          <li>Normal skin: Maintain balance with gentle products.</li>
+        </ul>
+
+        <h4>2. Identify Your Skin Concerns</h4>
+        <p>Target acne, hyperpigmentation, aging, or dryness with the right ingredients.</p>
+        <ul>
+          <li>Acne: Salicylic acid, benzoyl peroxide</li>
+          <li>Hyperpigmentation: Vitamin C, niacinamide</li>
+          <li>Aging: Retinol, peptides</li>
+        </ul>
+
+        <h4>3. Understand the Ingredients</h4>
+        <p>Read the label, avoid harsh chemicals, patch test when in doubt.</p>
+
+        <h4>4. Start Simple</h4>
+        <p>Use a basic cleanser, moisturizer, and sunscreen. Add actives slowly.</p>
+
+        <h4>5. Check Product Claims</h4>
+        <p>“Natural” and “organic” are not always meaningful — look for results, not buzzwords.</p>
+
+        <h4>6. Stay Within Budget</h4>
+        <p>Good skincare exists at all price points. Fancy doesn’t mean effective.</p>
+
+        <h4>7. Be Consistent</h4>
+        <p>Stick to a routine for at least 4–8 weeks to evaluate results.</p>
+
+        <h4>8. See a Professional</h4>
+        <p>If issues persist, consult a dermatologist.</p>
+      </div>
+      <button class="read-more-button" onclick="toggleReadMore(this)">Read More</button>
+    </div>
+
+    <!-- BLOG POST 2 (Top 5 Natural Products You Need in Your Daily Routine) -->
+    <div class="blog-post">
+      <h2>Top 5 Natural Products You Need in Your Daily Routine</h2>
+      <p>Natural skincare products are a great way to nourish your skin without harsh chemicals. Here are five natural products to incorporate into your routine:</p>
+      <div class="read-more-content">
+        <h4>1. Aloe Vera</h4>
+        <p>Aloe vera is known for its soothing and hydrating properties. It's perfect for calming irritated skin or reducing redness.</p>
+
+        <h4>2. Rose Water</h4>
+        <p>Rose water is a gentle toner that hydrates and refreshes the skin while helping to balance oil production.</p>
+
+        <h4>3. Jojoba Oil</h4>
+        <p>Jojoba oil is a great moisturizer that closely mimics your skin's natural oils, helping to hydrate without clogging pores.</p>
+
+        <h4>4. Green Tea</h4>
+        <p>Green tea is packed with antioxidants and has anti-inflammatory properties, making it ideal for protecting against skin aging and soothing inflammation.</p>
+
+        <h4>5. Honey</h4>
+        <p>Honey is a natural humectant, which means it draws moisture into the skin. It also has antibacterial properties, making it ideal for acne-prone skin.</p>
+      </div>
+      <button class="read-more-button" onclick="toggleReadMore(this)">Read More</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 GlowNature. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleReadMore(button) {
+      const readMoreContent = button.previousElementSibling;
+      readMoreContent.classList.toggle('show');
+      button.textContent = readMoreContent.classList.contains('show') ? 'Read Less' : 'Read More';
+    }
+  </script>
+</body>
+</html>
