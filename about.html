@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +8,53 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    .hero-about {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: url('forest banner.jpg') center/cover no-repeat;
+      height: 60vh;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+    .hero-about h1 {
+      font-size: 3rem;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+    }
+    .section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 4rem 2rem;
+    }
+    .story, .values {
+      margin-bottom: 3rem;
+    }
+    .values ul {
+      list-style: none;
+      padding: 0;
+    }
+    .values li {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+    .founder {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .founder img {
+      max-width: 300px;
+      border-radius: 12px;
+    }
+    .founder-text {
+      flex: 1;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -23,23 +71,27 @@
     </nav>
   </header>
 
-  <section class="about-section">
-    <h1>Our Story</h1>
-    <p>
-      GlowNature was born from a simple idea — that the best things for your skin already exist in nature. Founded by Theo Montgomery, a passionate believer in clean living and mindful self-care, this brand grew from a kitchen hobby into a mission to share natural healing with the world.
-    </p>
-    <p>
-      Each product is handcrafted with purpose, using only ethically sourced and organic ingredients. We’re committed to clean beauty that nourishes the skin without harming the environment. No harsh chemicals, no fake promises — just nature doing its thing.
-    </p>
+  <section class="hero-about">
+    <h1>Crafted by Nature, Made with Purpose</h1>
   </section>
 
-  <section class="about-values">
-    <h2>What We Stand For</h2>
-    <ul class="values-list">
-      <li><strong>Transparency:</strong> You deserve to know what’s in your skincare.</li>
-      <li><strong>Simplicity:</strong> We keep our ingredients minimal and meaningful.</li>
-      <li><strong>Care:</strong> Every product is handmade with your well-being in mind.</li>
-      <li><strong>Sustainability:</strong> Our packaging is eco-conscious and recyclable.</li>
+  <section class="section story">
+    <div class="founder">
+      <img src="Stsadi.jpg" alt="Theo Montgomery - Founder of GlowNature">
+      <div class="founder-text">
+        <h2>Our Story</h2>
+        <p>GlowNature began as a quiet idea in Theo Montgomery’s kitchen. Inspired by a deep love for natural healing and a passion for self-care, what started as a homemade hobby turned into a movement. Every product is a reflection of purity, passion, and purpose — rooted in the belief that nature provides everything your skin truly needs.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section values">
+    <h2>Our Values</h2>
+    <ul>
+      <li><strong> Transparency:</strong> You deserve to know what’s in your skincare.</li>
+      <li><strong> Simplicity:</strong> Clean, minimal, and powerful ingredients.</li>
+      <li><strong> Care:</strong> Handmade with intention and heart.</li>
+      <li><strong> Sustainability:</strong> Earth-friendly packaging & cruelty-free practices.</li>
     </ul>
   </section>
 
